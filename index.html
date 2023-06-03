@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Instrument+Sans&family=Inter:wght@400;500&family=Noto+Sans:wght@100&family=Roboto:wght@100;300&display=swap');
+      </style>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Card de Links</title>
+</head>
+<body>
+
+    <div id="container">
+    <div id="profile">
+        <img src="./assets/avatar.png" alt="Foto de Perfil">
+        <p>@martinhoduartes</p>
+     </div> <!-- div do profile -->
+
+        <div id="switch" onclick="toggleMode()">
+            <button>
+                
+            </button>
+            <span></span>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">Meu portfólio</a>
+            </li>
+
+            <li>
+                <a href="#">Entre em contato</a>
+            </li>
+
+            <li>
+                <a href="#">About me</a>
+            </li>
+
+            <li>
+                <a href="#">Documentação Lua Script</a>
+            </li>
+        </ul>
+        <div id="social-links"> <!-- tag de como usar os icones, pesquisar no site / funcao target faz com que ao clicar sobre o link abre uma nova pagian-->
+            <a href="https://instagram.com/martinhoduartes" target="_blank">
+            <ion-icon name="logo-github"></ion-icon></a>
+
+            <a href="https://instagram.com/martinhoduartes" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon></a>
+
+            <a href="https://instagram.com/martinhoduartes" target="_blank">
+            <ion-icon name="logo-youtube"></ion-icon></a>
+
+            <a href="https://instagram.com/martinhoduartes" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <footer>
+            Desenvolvido por Martinho Duarte
+        </footer>
+    </div>
+
+    <!-- script do ionicons pra ativar os icones -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
