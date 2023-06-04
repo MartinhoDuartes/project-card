@@ -96,12 +96,17 @@ body {
     left: 0;
     z-index: 1; /* funcao que tras a lua pra cima da camada da barra */
     transform: translateY(-50%); /* ao adicionar essa funcao eu consigo mover o eixo Y */
+
+    animation: slide-back 0.2s;
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in 0.4s forwards;
 
+}
+
+#switch button:hover{
+    outline: 5px solid var(--bg-color-hover);
 }
 
 #switch span {
@@ -183,5 +188,26 @@ footer{
     }
     .light {
         --bg-url: url(assets/desktop-light.jpg);
+    }
+}
+
+
+/* animation */
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
     }
 }
