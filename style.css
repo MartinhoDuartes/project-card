@@ -10,7 +10,7 @@ variavel chamei de --text-color e atribuir uma cor
    atribuindo uma variavel pro background */
 :root {
     --text-color: white;
-    --bg-url: url(assets/bg-darkmob.jpg);
+    --bg-url: url(assets/desktop-dark.jpg);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --bg-color: rgba(255, 255, 255, 0.080);   
     --bg-color-hover: rgba(255, 255, 255, 0.5); 
@@ -21,7 +21,7 @@ variavel chamei de --text-color e atribuir uma cor
 /* apliquei a variavel aqui pra pegar do :root as funcoes do modo light e atribuindo no css aos campos necessarios */
 .light {
     --text-color: black;
-    --bg-url: url(assets/bg-lightmob.jpg);
+    --bg-url: url(assets/desktop-light.jpg);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --bg-color: rgba(0, 0, 0, 0.011);
     --bg-color-hover: rgba(0, 0, 0, 0.2); 
@@ -31,7 +31,7 @@ variavel chamei de --text-color e atribuir uma cor
 
 body * {
     font-family: "Inter", sans-serif;
-    color: var(--text-color); /* apliquei a variavel aqui pra pegar do :root */
+    color: var(--text-color); /* apliquei a variavel aqui pra pegar do :root  repeat top center/cover*/
 }
 
 body {
@@ -43,7 +43,9 @@ body {
     */
 
     /*background: color image repeat position/size*/
-    background: var(--bg-url) no-repeat top center/cover; /* apliquei a variavel aqui pra pegar do :root */
+   /* apliquei a variavel aqui pra pegar do :root */
+   background: var(--bg-url) no-repeat top center/cover;
+
 }
 
 #container {    
@@ -169,4 +171,5 @@ footer{
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+    padding-bottom: 100%;
 }
